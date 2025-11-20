@@ -1,20 +1,17 @@
-AQI Predictor
+# AQI Predictor
 
-This repository contains an end-to-end Air Quality Index (AQI) prediction system.
-It includes data preprocessing, model training, evaluation, and multiple Streamlit applications for different model categories.
+This repository contains an end-to-end **Air Quality Index (AQI) prediction system**.  
+It includes **data preprocessing**, **model training**, **evaluation**, and **Streamlit applications** for different model categories.
 
-Several approaches were implemented, including:
+---
 
-Classical machine learning models
+## 🚀 Quick Start
 
-Lightweight minimal-feature regressors
-
-Small parameter-efficient neural networks
-
-🚀 Quick Start
+```bash
 git clone <your-repository-link>
 cd Aqi_predictor
 pip install -r requirements.txt
+
 
 Run Streamlit Apps
 Classical ML Model App
@@ -26,25 +23,6 @@ streamlit run DL_Models/streamlit_app.py
 Experimental Model App
 streamlit run Experiment/streamlit_app.py
 
-📁 Project Structure
-Aqi_predictor/
-│
-├── classical_models/       
-│   ├── aqi_predictor.ipynb
-│   └── streamlit_app.py
-│
-├── DL_Models/
-│   ├── aqi_predictor_nn.ipynb
-│   ├── models/
-│   └── streamlit_app.py
-│
-├── Experiment/
-│   ├── aqi_predictor_exp.ipynb
-│   └── streamlit_app.py
-│
-├── data/
-├── images/
-└── README.md
 
 📊 Models
 Classical Machine Learning

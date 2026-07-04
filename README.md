@@ -1,89 +1,77 @@
 # AQI Predictor
 
-This repository contains an end-to-end **Air Quality Index (AQI) prediction system**.  
-It includes **data preprocessing**, **model training**, **evaluation**, and **Streamlit applications** for different model categories.
+An end-to-end **Air Quality Index (AQI) Prediction** project featuring multiple machine learning and deep learning models with interactive **Streamlit** applications for real-time predictions.
 
----
+## Features
 
-## 🚀 Quick Start
+- Classical Machine Learning models
+- Minimal-feature AQI prediction (PM2.5 & PM10)
+- Deep Learning models built with TensorFlow/Keras
+- Interactive Streamlit dashboards
+- Clean and modular project structure
+
+## Installation
 
 ```bash
-git clone <your-repository-link>
+git clone <repository-link>
 cd Aqi_predictor
 pip install -r requirements.txt
+```
 
+## Run the Applications
 
-Run Streamlit Apps
-Classical ML Model App
+**Classical ML**
+```bash
 streamlit run classical_models/streamlit_app.py
+```
 
-Neural Network Model App
+**Deep Learning**
+```bash
 streamlit run DL_Models/streamlit_app.py
+```
 
-Experimental Model App
+**Experimental Models**
+```bash
 streamlit run Experiment/streamlit_app.py
+```
 
+## Models
 
-📊 Models
-Classical Machine Learning
+- Random Forest Regressor
+- SGD Regressor
+- Gradient Boosting Regressor
+- Minimal Feature Regression (PM2.5 & PM10)
+- TensorFlow/Keras Neural Networks
 
-RandomForestRegressor
+## Dataset
 
-SGDRegressor
+**Source:** Indian Air Pollution Dataset (2015–2020)
 
-Gradient Boosting and other baseline models
+**Preprocessing**
+- Missing value handling
+- Outlier treatment
+- Feature scaling
+- Feature selection
 
-These offer fast training and reliable performance with minimal preprocessing.
+## Tech Stack
 
-Minimal Feature Regression
+- Python
+- Scikit-learn
+- TensorFlow/Keras
+- Pandas & NumPy
+- Streamlit
 
-A simple AQI regression model using only PM2.5 and PM10, designed for quick estimation.
+## Project Structure
 
-Neural Networks
+```
+Aqi_predictor/
+├── classical_models/
+├── DL_Models/
+├── Experiment/
+├── requirements.txt
+└── README.md
+```
 
-Small neural networks built using TensorFlow/Keras, with architectures ranging from 91 to 187 parameters.
+## Result
 
-Trained on features:
-
-PM2.5
-
-PM10
-
-NO₂
-
-CO
-
-SO₂
-
-O₃
-
-📚 Dataset
-
-Source: Indian Air Pollution Data (2015–2020)
-
-Preprocessing Steps
-
-Missing value handling
-
-Outlier correction
-
-Feature scaling & normalization
-
-Minimal & extended feature selection
-
-🖥️ Streamlit Applications
-
-Each model category includes a dedicated Streamlit UI.
-Users can input pollutant values and get AQI predictions powered by different models.
-
-✅ Summary
-
-Multiple AQI prediction models implemented
-
-Includes Classical ML, Minimal models, and Neural Networks
-
-Modular folder structure
-
-Ready-to-use Streamlit applications
-
-Clean, production-ready project setup
+A modular, production-ready AQI prediction system supporting multiple ML/DL approaches through easy-to-use Streamlit interfaces.

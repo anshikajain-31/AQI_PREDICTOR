@@ -30,11 +30,6 @@ streamlit run classical_models/streamlit_app.py
 streamlit run DL_Models/streamlit_app.py
 ```
 
-**Experimental Models**
-```bash
-streamlit run Experiment/streamlit_app.py
-```
-
 ## Models
 
 - Random Forest Regressor
@@ -67,7 +62,6 @@ streamlit run Experiment/streamlit_app.py
 Aqi_predictor/
 ├── classical_models/
 ├── DL_Models/
-├── Experiment/
 ├── requirements.txt
 └── README.md
 ```
